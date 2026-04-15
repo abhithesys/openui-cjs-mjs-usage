@@ -1,0 +1,30 @@
+{
+  "name": "react-email-vite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@openuidev/react-email": "latest",
+    "@openuidev/react-headless": "latest",
+    "@openuidev/react-lang": "latest",
+    "@react-email/components": "^0.0.41",
+    "@react-email/render": "^1.0.6",
+    "lucide-react": "^0.562.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^6.0.0"
+  }
+}
