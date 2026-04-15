@@ -16,7 +16,6 @@ import {
   loadMessages,
   clearSession,
 } from "@/components/session";
-
 // ── Main App (manages view state) ──
 
 function EmailApp() {

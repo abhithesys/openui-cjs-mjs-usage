@@ -40,6 +40,7 @@ pnpm dev
 ```
 
 Runs on **http://localhost:30333**
+UI Demo: **http://localhost:30333/ui-demo**
 
 ### Vite
 
@@ -50,6 +51,7 @@ pnpm dev
 ```
 
 Runs on **http://localhost:30334** — proxies `/api` to `http://localhost:30333`
+UI Demo: **http://localhost:30334/#ui-demo**
 
 ### Create React App (webpack)
 
@@ -60,6 +62,7 @@ pnpm start
 ```
 
 Runs on **http://localhost:30335** — proxies `/api` to `http://localhost:30333`
+UI Demo: **http://localhost:30335/#ui-demo**
 
 ## Packages used
 

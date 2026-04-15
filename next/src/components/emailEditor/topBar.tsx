@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@openuidev/react-ui";
 import { Mail as MailIcon, Plus as PlusIcon } from "lucide-react";
 
 interface TopBarProps {
@@ -48,38 +49,15 @@ export function TopBar({ isDark, isMobile, isRunning, onNewEmail }: TopBarProps)
         {isRunning && <GeneratingIndicator isDark={isDark} isMobile={isMobile} />}
       </div>
 
-      <button
+      <Button
+        variant="secondary"
+        size="small"
         onClick={onNewEmail}
-        title="New Email"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: isMobile ? 0 : "6px",
-          padding: isMobile ? "8px" : "8px 16px",
-          borderRadius: isMobile ? "8px" : "10px",
-          border: `1px solid ${isDark ? "#1f1f1f" : "#e5e7eb"}`,
-          backgroundColor: isDark ? "#111111" : "#ffffff",
-          color: isDark ? "#e5e7eb" : "#374151",
-          fontSize: "13px",
-          fontWeight: 500,
-          cursor: "pointer",
-          transition: "all 0.2s",
-          width: isMobile ? "36px" : undefined,
-          height: isMobile ? "36px" : undefined,
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = "#5F51E8";
-          e.currentTarget.style.backgroundColor = isDark ? "#1a1a2e" : "#EEF2FF";
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = isDark ? "#1f1f1f" : "#e5e7eb";
-          e.currentTarget.style.backgroundColor = isDark ? "#111111" : "#ffffff";
-        }}
+        style={{ color: 'white', 'whiteSpace': "nowrap" }}
+        iconLeft={<PlusIcon size={14} />}
       >
-        <PlusIcon size={isMobile ? 16 : 14} color={isDark ? "#e5e7eb" : "#374151"} />
         {!isMobile && "New Email"}
-      </button>
+      </Button>
     </div>
   );
 }

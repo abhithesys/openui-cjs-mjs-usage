@@ -12,6 +12,7 @@
     "@openuidev/react-email": "latest",
     "@openuidev/react-headless": "latest",
     "@openuidev/react-lang": "latest",
+    "@openuidev/react-ui": "latest",
     "@react-email/components": "^0.0.41",
     "@react-email/render": "^1.0.6",
     "lucide-react": "^0.562.0",
